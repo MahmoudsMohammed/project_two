@@ -290,3 +290,60 @@ header .container nav .links:hover + ul {
   }
 }
 /* end services */
+
+/* start features */
+.features{
+  height: 80vh;
+  background: linear-gradient(rgb(0 0 0 / 60%), rgb(0 0 0 / 60%)),
+    url('../static/design-features.jpg');
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+.features .text{
+  background-color: var(--transparent-color);
+  padding: 50px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+} 
+.features .text h4{
+  font-size: 25px;
+  font-weight: normal;
+  margin: 0px;
+  margin-bottom: 50px;
+}
+.features .text ul li{
+  position: relative;
+  margin-left: 30px;
+}
+.features .text ul li:not(:last-of-type){
+  margin-bottom: 25px;
+}
+.features .text ul li::before{
+  content: "\f11c";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 800;
+  position: absolute;
+  top: 0px;
+  left: -30px;
+}
+.features img{
+  display: none;
+}
+@media (min-width: 768px) {
+  .features .text{
+    width: 50%;
+    right: 0;
+  }
+  .features img{
+    display: block;
+    position: absolute;
+    left: 25%;
+    transform: translateX(-50%);
+    bottom: -80px;
+  }
+}
+/* end features */
