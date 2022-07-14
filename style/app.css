@@ -424,3 +424,42 @@ header .container nav .links:hover + ul {
   border-radius: 5px;
 }
 /* end portfolio */
+
+/* start video */
+.video{
+  position: relative;
+  background: linear-gradient(rgb(0 0 0 / 50%) , rgb(0 0 0 / 50%));
+}
+.video video{
+  width: 100%;
+  position: relative;
+  z-index: -1;
+}
+.video .text{
+  padding: 50px;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+  background-color: var(--transparent-color);
+  text-align: center;
+}
+.video .text h4{
+  font-weight: normal;
+  font-size: 25px;
+  margin: 0px;
+  color: white;
+  line-height: 1.8;
+}
+.video .text p{
+  margin: 30px 0px;
+  color: white;
+}
+.video .text button{
+  color: white;
+  background-color: black;
+  padding: 10px 20px;
+  border: none;
+  text-transform: uppercase;
+}
+/* end video */
