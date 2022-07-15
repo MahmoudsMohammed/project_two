@@ -9,7 +9,7 @@ html {
   --transparent-color: rgb(15 116 143 / 70%);
   --section-padding: 100px;
   --paragraph-color: #777;
-  --transition : .3s;
+  --transition: 0.3s;
 }
 /* same level for all section */
 .container {
@@ -294,15 +294,15 @@ header .container nav .links:hover + ul {
 /* end services */
 
 /* start features */
-.features{
+.features {
   height: 80vh;
   background: linear-gradient(rgb(0 0 0 / 60%), rgb(0 0 0 / 60%)),
     url('../static/design-features.jpg');
-    background-size: cover;
-    position: relative;
-    overflow: hidden;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
 }
-.features .text{
+.features .text {
   background-color: var(--transparent-color);
   padding: 50px;
   color: white;
@@ -310,37 +310,37 @@ header .container nav .links:hover + ul {
   top: 50%;
   transform: translateY(-50%);
   width: 100%;
-} 
-.features .text h4{
+}
+.features .text h4 {
   font-size: 25px;
   font-weight: normal;
   margin: 0px;
   margin-bottom: 50px;
 }
-.features .text ul li{
+.features .text ul li {
   position: relative;
   margin-left: 30px;
 }
-.features .text ul li:not(:last-of-type){
+.features .text ul li:not(:last-of-type) {
   margin-bottom: 25px;
 }
-.features .text ul li::before{
-  content: "\f11c";
-  font-family: "Font Awesome 6 Free";
+.features .text ul li::before {
+  content: '\f11c';
+  font-family: 'Font Awesome 6 Free';
   font-weight: 800;
   position: absolute;
   top: 0px;
   left: -30px;
 }
-.features img{
+.features img {
   display: none;
 }
 @media (min-width: 768px) {
-  .features .text{
+  .features .text {
     width: 50%;
     right: 0;
   }
-  .features img{
+  .features img {
     display: block;
     position: absolute;
     left: 25%;
@@ -351,31 +351,31 @@ header .container nav .links:hover + ul {
 /* end features */
 
 /* start portfolio */
-.portfolio{
+.portfolio {
   padding-top: var(--section-padding);
   padding-bottom: var(--section-padding);
 }
-.portfolio ul{
+.portfolio ul {
   display: flex;
   margin: 0px auto 50px;
   width: fit-content;
 }
-.portfolio ul li{
+.portfolio ul li {
   padding: 10px;
 }
-.portfolio ul li.active{
+.portfolio ul li.active {
   color: white;
   background-color: var(--main-color);
 }
-.portfolio .image_container .box{
+.portfolio .image_container .box {
   position: relative;
   overflow: hidden;
 }
-.portfolio .image_container img{
+.portfolio .image_container img {
   max-width: 100%;
   transition: var(--transition);
 }
-.portfolio .image_container .text{
+.portfolio .image_container .text {
   position: absolute;
   width: 100%;
   background-color: white;
@@ -383,36 +383,36 @@ header .container nav .links:hover + ul {
   transition: var(--transition);
   bottom: -100px;
 }
-.portfolio .image_container .text h4{
+.portfolio .image_container .text h4 {
   font-weight: normal;
   margin: 0px;
 }
-.portfolio .image_container .text p{
+.portfolio .image_container .text p {
   color: var(--main-color);
   margin: 0px;
   margin-top: 10px;
 }
-.portfolio .image_container .box:hover img{
+.portfolio .image_container .box:hover img {
   transform: rotate(3deg) scale(1.1);
 }
-.portfolio .image_container .box:hover .text{
+.portfolio .image_container .box:hover .text {
   bottom: 0px;
 }
 @media (min-width: 768px) {
-  .portfolio .image_container{
+  .portfolio .image_container {
     display: flex;
     flex-wrap: wrap;
   }
-  .portfolio .image_container .box{
+  .portfolio .image_container .box {
     flex-basis: 50%;
   }
 }
 @media (min-width: 1200px) {
-  .portfolio .image_container .box{
+  .portfolio .image_container .box {
     flex-basis: 25%;
   }
 }
-.portfolio a{
+.portfolio a {
   text-decoration: none;
   color: white;
   background-color: var(--main-color);
@@ -426,16 +426,16 @@ header .container nav .links:hover + ul {
 /* end portfolio */
 
 /* start video */
-.video{
+.video {
   position: relative;
-  background: linear-gradient(rgb(0 0 0 / 50%) , rgb(0 0 0 / 50%));
+  background: linear-gradient(rgb(0 0 0 / 50%), rgb(0 0 0 / 50%));
 }
-.video video{
+.video video {
   width: 100%;
   position: relative;
   z-index: -1;
 }
-.video .text{
+.video .text {
   padding: 50px;
   position: absolute;
   top: 50%;
@@ -444,18 +444,18 @@ header .container nav .links:hover + ul {
   background-color: var(--transparent-color);
   text-align: center;
 }
-.video .text h4{
+.video .text h4 {
   font-weight: normal;
   font-size: 25px;
   margin: 0px;
   color: white;
   line-height: 1.8;
 }
-.video .text p{
+.video .text p {
   margin: 30px 0px;
   color: white;
 }
-.video .text button{
+.video .text button {
   color: white;
   background-color: black;
   padding: 10px 20px;
@@ -465,19 +465,19 @@ header .container nav .links:hover + ul {
 /* end video */
 
 /* start about */
-.about{
+.about {
   padding: var(--section-padding) 20px 0px;
   text-align: center;
   overflow: hidden;
 }
-.about img{
+.about img {
   position: relative;
   bottom: -60px;
   margin-top: -60px;
   max-width: 100%;
 }
 @media (min-width: 768px) {
-  .about img{
+  .about img {
     bottom: -120px;
     margin-top: -120px;
   }
@@ -485,20 +485,21 @@ header .container nav .links:hover + ul {
 /* end about */
 
 /* start status */
-.status{
+.status {
   padding: var(--section-padding) 20px;
-  background: linear-gradient(rgb(0 0 0 / 60%) , rgb(0 0 0 / 60%)),url('../static/stats.png');
+  background: linear-gradient(rgb(0 0 0 / 60%), rgb(0 0 0 / 60%)),
+    url('../static/stats.png');
   background-size: cover;
 }
-.status .container{
+.status .container {
   padding: 50px;
   background-color: var(--transparent-color);
   text-align: center;
 }
-.status .container .box:not(:last-of-type){
+.status .container .box:not(:last-of-type) {
   margin-bottom: 80px;
 }
-.status .container .box i{
+.status .container .box i {
   color: white;
   width: 40px;
   height: 40px;
@@ -509,113 +510,113 @@ header .container nav .links:hover + ul {
   justify-content: center;
   align-items: center;
 }
-.status .container .box p:first-of-type{
+.status .container .box p:first-of-type {
   font-size: 50px;
   font-weight: bold;
-  margin: 20px 0px; 
+  margin: 20px 0px;
   color: white;
 }
-.status .container .box p:last-of-type{
+.status .container .box p:last-of-type {
   font-weight: 16px;
   margin: 0px;
   color: white;
 }
 @media (min-width: 768px) {
-  .status .container .box:nth-child(3){
+  .status .container .box:nth-child(3) {
     margin-bottom: 0px;
   }
-  .status .container{
+  .status .container {
     display: flex;
     flex-wrap: wrap;
   }
-  .status .container .box{
+  .status .container .box {
     flex-basis: 50%;
   }
 }
 /* Medium */
 @media (min-width: 992px) {
-  .status .container .box:not(:last-of-type){
+  .status .container .box:not(:last-of-type) {
     margin-bottom: 0px;
   }
-  .status .container .box{
+  .status .container .box {
     flex-basis: 25%;
   }
 }
 /* end status */
 
 /* start skills */
-.skills{
+.skills {
   padding-top: var(--section-padding);
   padding-bottom: var(--section-padding);
 }
-.skills .container h4{
+.skills .container h4 {
   font-weight: normal;
   width: fit-content;
   margin: 0px auto 30px;
   font-size: 20px;
 }
-.skills .container .test>p , 
-.skills .container .our_skills>p{
+.skills .container .test > p,
+.skills .container .our_skills > p {
   color: var(--paragraph-color);
   line-height: 1.8;
   width: fit-content;
   text-align: center;
   margin: 0px auto 50px;
 }
-.skills .container .test img{
+.skills .container .test img {
   display: block;
   width: 100px;
   border-radius: 50%;
   margin: 0px auto;
 }
-.skills .container .test .box p:first-of-type{
+.skills .container .test .box p:first-of-type {
   text-align: center;
   line-height: 1.8;
 }
-.skills .container .test .box p:last-of-type{
+.skills .container .test .box p:last-of-type {
   text-align: right;
   color: var(--paragraph-color);
 }
-.skills .container .test .box{
+.skills .container .test .box {
   margin-bottom: 50px;
 }
-.skills .container .test .box .text{
+.skills .container .test .box .text {
   border-bottom: 1px solid #ccc;
 }
-.skills .container .test>ul{
+.skills .container .test > ul {
   display: flex;
   width: fit-content;
   margin: 0px auto 80px;
 }
-.skills .container .test>ul li{
+.skills .container .test > ul li {
   width: 15px;
   height: 15px;
   border-radius: 50%;
   margin-left: 10px;
   border: 1px solid #ccc;
 }
-.skills .container .test>ul li.active{
+.skills .container .test > ul li.active {
   background-color: var(--main-color);
   border-color: var(--main-color);
 }
-.our_skills .skill{
+.our_skills .skill {
   margin-bottom: 40px;
 }
-.our_skills .skill p{
+.our_skills .skill p {
   text-transform: uppercase;
 }
-.our_skills .skill div{
+.our_skills .skill div {
   width: 100%;
   height: 30px;
   background-color: #dfdfdf;
 }
-.our_skills .skill div span{
+.our_skills .skill div span {
   display: block;
   background-color: var(--main-color);
   height: 100%;
   position: relative;
 }
-.our_skills .skill div span::after{
+.our_skills .skill div span::after {
   content: attr(persent);
   position: absolute;
   width: 40px;
@@ -627,8 +628,8 @@ header .container nav .links:hover + ul {
   top: -40px;
   padding: 5px;
 }
-.our_skills .skill div span::before{
-  content: "";
+.our_skills .skill div span::before {
+  content: '';
   position: absolute;
   border: 10px solid transparent;
   border-top-color: black;
@@ -636,39 +637,41 @@ header .container nav .links:hover + ul {
   top: -15px;
 }
 @media (min-width: 768px) {
-  .skills .container .test .box{
+  .skills .container .test .box {
     display: flex;
     align-items: center;
   }
-  .skills .container .test .box .text{
+  .skills .container .test .box .text {
     margin-left: 50px;
   }
-  .skills .container .test .box p:first-of-type{
+  .skills .container .test .box p:first-of-type {
     text-align: left;
   }
 }
 
 @media (min-width: 992px) {
-  .skills .container{
+  .skills .container {
     display: flex;
     justify-content: space-between;
   }
-  .skills .container .test , .skills .container .our_skills{
+  .skills .container .test,
+  .skills .container .our_skills {
     flex-basis: 45%;
   }
 }
 /* end skills */
 
 /* start qoute */
-.qoute{
+.qoute {
   padding-top: var(--section-padding);
   padding-bottom: var(--section-padding);
-  background: linear-gradient(rgb(0 0 0 / 75%),rgb(0 0 0 / 75%)) , url(../static/quote.jpg);
+  background: linear-gradient(rgb(0 0 0 / 75%), rgb(0 0 0 / 75%)),
+    url(../static/quote.jpg);
   background-size: cover;
   text-align: center;
   color: white;
 }
-.qoute .container q{
+.qoute .container q {
   display: block;
   margin-bottom: 30px;
   line-height: 1.6;
@@ -677,17 +680,17 @@ header .container nav .links:hover + ul {
 /* end qoute */
 
 /* start pricing */
-.pricing{
+.pricing {
   padding-top: var(--section-padding);
   padding-bottom: var(--section-padding);
 }
-.pricing .container{
+.pricing .container {
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(250px , 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 30px;
   text-align: center;
 }
-.pricing .container .box p:first-of-type{
+.pricing .container .box p:first-of-type {
   text-transform: uppercase;
   font-size: 20px;
   font-weight: normal;
@@ -695,7 +698,7 @@ header .container nav .links:hover + ul {
   padding-top: 40px;
   width: 100%;
 }
-.pricing .container .box p:last-of-type{
+.pricing .container .box p:last-of-type {
   font-size: 50px;
   font-weight: bold;
   border-bottom: 1px solid var(--main-color);
@@ -704,15 +707,15 @@ header .container nav .links:hover + ul {
   margin-bottom: 0px;
   width: 100%;
 }
-.pricing .container .box p:last-of-type::before{
-  content: "$";
+.pricing .container .box p:last-of-type::before {
+  content: '$';
   position: absolute;
   font-size: 25px;
   font-weight: normal;
   top: -15px;
   margin-left: -25px;
 }
-.pricing .container .box p:last-of-type::after{
+.pricing .container .box p:last-of-type::after {
   content: '/Mo';
   position: absolute;
   font-size: 25px;
@@ -720,15 +723,15 @@ header .container nav .links:hover + ul {
   bottom: 40px;
   margin-left: 15px;
 }
-.pricing .container .box ul{
+.pricing .container .box ul {
   border-bottom: 1px solid var(--main-color);
 }
-.pricing .container .box ul li{
+.pricing .container .box ul li {
   padding: 20px;
   position: relative;
 }
-.pricing .container .box ul li:not(:last-of-type)::after{
-  content: "";
+.pricing .container .box ul li:not(:last-of-type)::after {
+  content: '';
   position: absolute;
   width: 120px;
   height: 1px;
@@ -737,7 +740,7 @@ header .container nav .links:hover + ul {
   left: 50%;
   transform: translateX(-50%);
 }
-.pricing .container .box a{
+.pricing .container .box a {
   text-decoration: none;
   padding: 10px 20px;
   border: 1px solid var(--main-color);
@@ -745,12 +748,12 @@ header .container nav .links:hover + ul {
   width: fit-content;
   margin: 30px auto 60px;
 }
-.pricing p{
+.pricing p {
   width: fit-content;
   margin: 30px auto;
   font-size: 20px;
 }
-.pricing>a{
+.pricing > a {
   text-decoration: none;
   display: block;
   width: fit-content;
@@ -760,3 +763,68 @@ header .container nav .links:hover + ul {
   padding: 15px 30px;
 }
 /* end pricing */
+
+/* start subscribe */
+.subscribe {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  background: linear-gradient(rgb(0 0 0 / 60%), rgb(0 0 0 / 60%)),
+    url(../static/subscribe.jpg);
+  background-size: cover;
+  color: white;
+}
+.subscribe form {
+  position: relative;
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+.subscribe form ::placeholder {
+  color: white;
+}
+.subscribe input[type='text'] {
+  border: 1px solid white;
+  border-right: none;
+  background: none;
+  padding: 15px;
+  padding-left: 50px;
+  caret-color: var(--main-color);
+  width: calc(100% - 120px);
+}
+.subscribe input[type='submit'] {
+  background-color: var(--main-color);
+  border: 1px solid white;
+  border-left: none;
+  color: white;
+  padding: 15px;
+  width: 120px;
+  text-transform: uppercase;
+}
+.subscribe form i {
+  position: absolute;
+  left: 20px;
+}
+.subscribe input:focus {
+  outline: none;
+}
+.subscribe p {
+  line-height: 1.8;
+  text-align: center;
+  margin-top: 30px;
+}
+@media (min-width: 992px) {
+  .subscribe .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .subscribe form {
+    flex-basis: 45%;
+  }
+  .subscribe p {
+    flex-basis: 45%;
+    text-align: left;
+  }
+}
+/* end subscribe */
