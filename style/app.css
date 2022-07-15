@@ -890,10 +890,10 @@ header .container nav .links:hover + ul {
     order: 2;
     text-align: left;
   }
-  .contact .container .info p:first-of-type{
+  .contact .container .info p:first-of-type {
     margin-bottom: 80px;
   }
-  .contact .container .info h4:first-of-type{
+  .contact .container .info h4:first-of-type {
     margin-top: 0px;
   }
   .contact .container form {
@@ -902,3 +902,39 @@ header .container nav .links:hover + ul {
   }
 }
 /* end contact */
+
+/* start footer */
+footer {
+  padding-top: calc(var(--section-padding) / 2);
+  padding-bottom: calc(var(--section-padding) / 2);
+  background: linear-gradient(rgb(0 0 0 / 60%), rgb(0 0 0 / 60%)),
+    url(../static/subscribe.jpg);
+  background-size: cover;
+}
+footer .container {
+  text-align: center;
+  color: white;
+}
+footer .container p:first-of-type {
+  width: fit-content;
+  margin: 30px auto;
+  font-size: 25px;
+  padding: 15px;
+  text-transform: uppercase;
+  border-bottom: 1px solid white;
+}
+footer .container .icons i {
+  padding: 15px;
+  transition: var(--transition);
+}
+footer .container .icons i:hover{
+  color: var(--main-color);
+}
+footer .container .icons {
+  margin-bottom: 50px;
+}
+footer .container span {
+  color: var(--main-color);
+  font-weight: bold;
+}
+/* end footer */
